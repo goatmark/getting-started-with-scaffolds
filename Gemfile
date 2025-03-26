@@ -94,3 +94,5 @@ group :test do
   gem "selenium-webdriver", "~> 4.11.0"
   gem "webdrivers"
 end
+
+gem "draft_generators"
