@@ -11,6 +11,13 @@
         </a>
       </div>
 
+      
+      <div>
+        <a href="/movies/<%= @the_movie.id %>/edit" data-turbo-method="delete">
+          Edit movie
+        </a>
+      </div>
+      
       <div>
         <a href="/movies/<%= @the_movie.id %>" data-turbo-method="delete">
           Delete movie
@@ -70,7 +77,7 @@
       <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
       <input type="hidden" name="_method" value="patch">
-      
+
       <div>
         <label for="title_box">
           Title

@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   resources :books
+  resources :movies
   # Routes for the Movie resource:
 
   # CREATE
   post("/movies", { :controller => "movies", :action => "create" })
-  post("/movies/new", { :controller => "movies", :action => "new" })
-          
+            
   # READ
   get("/movies", { :controller => "movies", :action => "index" })
   get("/movies/:id", { :controller => "movies", :action => "show" })

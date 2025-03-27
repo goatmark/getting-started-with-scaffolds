@@ -25,8 +25,16 @@
   </head>
 
   <body>
-    <%= notice %>
-    <%= alert %>
+    <ul>
+      <li><a href="/movies/">Movies</a></li>
+      <li><a href="/books/">Books</a></li>
+    </ul>
+    <div style="color: black">
+      <%= notice %>
+    </div>
+    <div style="color: red">
+      <%= alert %>
+    </div>
     <%= yield %>
   </body>
 </html>
