@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # CREATE
   post("/movies", { :controller => "movies", :action => "create" })
-  post("/movies", { :controller => "movies", :action => "new" })
+  post("/movies/new", { :controller => "movies", :action => "new" })
           
   # READ
   get("/movies", { :controller => "movies", :action => "index" })
